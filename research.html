@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — YeonJun Choi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script src="site.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">YeonJun Choi</a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="research.html">Research</a>
+      <a class="nav__link" href="publications.html">Publications</a>
+      <a class="nav__link" href="presentations.html">Presentations</a>
+      <a class="nav__link" href="cv.html">CV</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+</nav>
+
+<main class="page" data-screen-label="02 Research">
+  <div class="wrap">
+
+    <p class="page__eyebrow">Research</p>
+    <h1 class="page__title">Materials, magnetism, and the local probe.</h1>
+    <p class="page__lede">
+      A short overview of current and prior research directions — across
+      solid-state NMR, soft magnetic composites, and electromagnetic
+      shielding materials.
+    </p>
+
+    <!-- ── TAMU ──────────────────────────────────────────── -->
+    <section class="section">
+      <div class="section__label">
+        <span>I &nbsp;·&nbsp; Texas A&amp;M University</span>
+        <span class="num">2024 — present</span>
+      </div>
+
+      <h2 class="section__title">Solid-state NMR of functional oxides</h2>
+
+      <p>
+        At TAMU, my work uses nuclear magnetic resonance as a local probe of
+        magnetic and ferroelectric oxides. NMR is uniquely sensitive to the
+        electronic and structural environment of individual nuclei — making
+        it a powerful complement to bulk magnetic and dielectric measurements.
+      </p>
+
+      <h3>Combined quadrupole and magnetic relaxation</h3>
+      <p>
+        In many of the oxides we study, both quadrupolar coupling and magnetic
+        hyperfine interactions contribute to the observed
+        <span class="mono">T₁</span> and <span class="mono">T₂</span>
+        relaxation. Disentangling these channels is essential before relaxation
+        data can be interpreted in terms of local structure or dynamics.
+      </p>
+      <p class="muted">
+        A manuscript developing exponential-fitting strategies for this combined
+        behavior is in preparation with R. Li and J. H. Ross Jr.
+      </p>
+
+      <h3>Materials of interest</h3>
+      <p class="muted">
+        (Y, Fe)-codoped BaTiO₃ and related multiferroic perovskites; M-type
+        hexaferrites; transition-metal-substituted spinels.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── HUFS ──────────────────────────────────────────── -->
+    <section class="section">
+      <div class="section__label">
+        <span>II &nbsp;·&nbsp; Hankuk University of Foreign Studies</span>
+        <span class="num">2018 — 2024</span>
+      </div>
+
+      <h2 class="section__title">Soft magnetic composites (SMCs)</h2>
+      <p>
+        Soft magnetic composites are replacing traditional ferrite cores in
+        modern power electronics. As switching frequencies climb past 1 MHz,
+        metallic-particle SMCs become attractive: they retain inductance and
+        permeability at high frequency, and their low coercivity translates
+        into low hysteresis loss.
+      </p>
+      <p>
+        My work focused on two practical objectives — raising the permeability
+        of the inductor core, which historically lags ferrite, and reducing
+        the total core-loss in the high-frequency band where industry actually
+        operates. The approach combined microstructural deformation,
+        nanopowder additions (Fe–50Ni, Ni, Zn), and particle-size control of
+        Fe–Si–Cr crystalline alloys.
+      </p>
+
+      <h2 class="section__title" style="margin-top:48px">
+        Electromagnetic interference (EMI) shielding
+      </h2>
+      <p>
+        Densification, miniaturisation, and rising operating frequencies have
+        made electromagnetic compatibility a first-order design constraint
+        across mobile devices, IoT, 5G, and automotive electronics. Stray
+        electromagnetic disturbance is now a documented cause of device
+        malfunction — and a public-safety concern.
+      </p>
+      <p>
+        Our work surveyed candidate shielding materials in the microwave
+        regime: spinel ferrites, M-type hexaferrites including BaFe₁₂₋ₓCoₓO₁₉,
+        and 2-D additives such as MXenes. As 5G transitions from sub-6 to
+        Ka-band (≈ 30 GHz), the design target shifts again — and the
+        electronic structure of the absorber has to be tuned to match.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <p class="muted">
+      A complete list of resulting publications is on the
+      <a href="publications.html">Publications</a> page.
+    </p>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <span>© <span id="year"></span> &nbsp; YeonJun Choi</span>
+    <span>Set in EB Garamond &amp; JetBrains Mono</span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
