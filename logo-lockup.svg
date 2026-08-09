@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 96" width="440" height="96" role="img" aria-label="YeonJun Choi">
+  <!--
+    Horizontal lockup: precession mark + name.
+    Uses EB Garamond / JetBrains Mono when available (already loaded on the
+    site), falling back to Georgia / monospace elsewhere.
+  -->
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="var(--accent, #5b4b3a)"/>
+    </marker>
+    <marker id="tip-faint" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--fg-faint, #8a8780)"/>
+    </marker>
+  </defs>
+
+  <!-- ── mark, scaled into an 80×80 box ─────────────────────── -->
+  <g transform="translate(8 8) scale(0.625)">
+    <line x1="64" y1="96" x2="64" y2="16"
+          stroke="var(--fg-faint, #8a8780)" stroke-width="1.2"
+          stroke-dasharray="1 4" stroke-linecap="round"/>
+    <ellipse cx="64" cy="38" rx="34" ry="11"
+             fill="none" stroke="var(--fg-faint, #8a8780)"
+             stroke-width="1.4" stroke-dasharray="3 4" stroke-linecap="round"/>
+    <path d="M 40 46.5 A 34 11 0 0 1 33 34"
+          fill="none" stroke="var(--fg-faint, #8a8780)"
+          stroke-width="1.4" stroke-linecap="round" marker-end="url(#tip-faint)"/>
+    <line x1="64" y1="96" x2="92" y2="44.5"
+          stroke="var(--accent, #5b4b3a)" stroke-width="2.6"
+          stroke-linecap="round" marker-end="url(#tip)"/>
+    <circle cx="64" cy="96" r="5" fill="var(--accent, #5b4b3a)"/>
+  </g>
+
+  <!-- ── name ───────────────────────────────────────────────── -->
+  <text x="104" y="52"
+        font-family="'EB Garamond', 'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+        font-size="34" font-style="italic" font-weight="500"
+        fill="var(--fg, #1a1a1a)" letter-spacing="0.01em">YeonJun Choi</text>
+
+  <text x="106" y="76"
+        font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace"
+        font-size="11.5" letter-spacing="0.08em"
+        fill="var(--fg-mute, #5a5853)">solid-state nmr · nqr · quantum materials</text>
+</svg>
